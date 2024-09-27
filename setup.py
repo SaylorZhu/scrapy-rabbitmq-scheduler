@@ -2,17 +2,17 @@
 from setuptools import setup, find_packages
 setup(
     # 以下为必需参数
-    name='scrapy-rabbitmq-scheduler',  # 模块名
-    version='1.0.9',  # 当前版本
+    name='scrapy-rabbitmq-scheduler-saylor',  # 模块名
+    version='0.0.1',  # 当前版本
     description='Rabbitmq for Distributed scraping',  # 简短描述
-    author='aox lei',
-    author_email='2387813033@qq.com',
+    author='saylorzhu',
+    author_email='531301071@qq.com',
     license='MIT',
-    url='https://github.com/aox-lei/scrapy-rabbitmq-scheduler',
+    url='https://github.com/SaylorZhu/scrapy-rabbitmq-scheduler.git',
     install_requires=[
         'pika',
-        'Scrapy>=0.14'
+        'Scrapy'
     ],
-    packages=['scrapy_rabbitmq_scheduler'],
+    packages=['scrapy_rabbitmq_scheduler_saylor'],
     package_dir={'': 'src'}
 )

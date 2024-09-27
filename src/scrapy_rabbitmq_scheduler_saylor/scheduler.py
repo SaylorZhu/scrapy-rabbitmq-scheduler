@@ -1,11 +1,6 @@
-import sys
-import time
 import signal
 import logging
-import pickle
 
-from scrapy.http import Request
-from . import connection
 from .queue import RabbitMQQueue
 
 logger = logging.getLogger(__name__)
@@ -47,7 +42,7 @@ class Scheduler(IScheduler):
             raise ValueError(msg)
 
 
-repo_url = 'https://github.com/aox-lei/scrapy_rabbitmq'
+repo_url = 'https://github.com/SaylorZhu/scrapy-rabbitmq-scheduler.git'
 
 
 class RabbitMQScheduler(Scheduler):

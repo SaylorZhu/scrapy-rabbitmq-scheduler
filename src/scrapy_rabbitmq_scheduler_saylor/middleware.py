@@ -1,4 +1,3 @@
-import pika
 import logging
 
 from scrapy.exceptions import IgnoreRequest

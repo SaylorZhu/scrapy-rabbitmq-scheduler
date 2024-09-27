@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 import scrapy
 import pickle
-from scrapy.utils.reqser import request_from_dict
+from scrapy.utils.request import request_from_dict
 
 
 class RabbitSpider(scrapy.Spider):

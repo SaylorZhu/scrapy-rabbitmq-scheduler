@@ -1,9 +1,7 @@
 # system packages
-import sys
-import time
 import pika
 import logging
-from scrapy.utils.reqser import request_to_dict
+from scrapy.utils.request import request_to_dict
 # module packages
 from . import connection
 from . import picklecompat

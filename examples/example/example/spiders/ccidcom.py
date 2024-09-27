@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 import scrapy
-from scrapy_rabbitmq_scheduler.spiders import RabbitSpider
+from scrapy_rabbitmq_scheduler_saylor.spiders import RabbitSpider
 from example.items import ArticleItem
 
 
