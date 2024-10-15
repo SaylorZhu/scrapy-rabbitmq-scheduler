@@ -7,7 +7,7 @@ from scrapy.utils.request import request_from_dict
 class RabbitSpider(scrapy.Spider):
     def _make_request(self, mframe, hframe, body):
         try:
-            request = request_from_dict(pickle.loads(body), self)
+            request = request_from_dict(pickle.loads(body), spider=self)
         except Exception as e:
             body = body.decode()
             request = scrapy.Request(body, callback=self.parse, dont_filter=True)
