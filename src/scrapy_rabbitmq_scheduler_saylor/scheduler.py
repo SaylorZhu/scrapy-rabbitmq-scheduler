@@ -158,9 +158,9 @@ class SaaS(RabbitMQScheduler):
         super(SaaS, self).__init__(connection_url, *args, **kwargs)
 
     def ack_message(self, delivery_tag):
-        if self.queue:
+        if self.queue is not None:
             self.queue.ack(delivery_tag)
 
     def requeue_message(self, body, headers=None):
-        if self.queue:
+        if self.queue is not None:
             self.queue.push(body, headers)
